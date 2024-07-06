@@ -1,0 +1,9 @@
+{% if latest_chore_list %}
+    <ul>
+    {% for chore in latest_chore_list %}
+        <li><a href="/chores/{{ chore.id }}/">{{ chore.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No chores are available.</p>
+{% endif %}
