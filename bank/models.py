@@ -4,10 +4,11 @@ from django.utils.translation import gettext_lazy as _
 
 class Bank(models.Model):
     account_number = models.IntegerField()
+    account_name = models.CharField(max_length=50, default="My Bank Account")
     balance = models.IntegerField()
     # transaction_history = models.OneToManyField("Transaction")
     def __str__(self):
-        return self.account_number
+        return self.account_name
     # add to balance
     # remove from balance
     # print balance

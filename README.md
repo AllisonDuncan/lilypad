@@ -40,8 +40,7 @@ VIEWS
 
 
 TODOS
-* update the models according to the database diagram and document
-* remove polls feature?
+* remove polls feature? --  could be fun to keep this as a little easter egg for us
 * document necessary functions
 * ui for apps
-* add an app for bank
+* extending the main user object to contain the additional needs
